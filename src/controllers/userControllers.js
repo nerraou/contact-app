@@ -1,6 +1,7 @@
 const User = require("../models/user");
 const bcrypt = require("bcrypt");
 
+//check for existing phone numbers
 async function register(req, res) {
   let user;
 
@@ -26,4 +27,9 @@ async function register(req, res) {
   }
 }
 
+//check for the phone number existing then the password use Bcrypt
+async function login(req, res) {
+  try {
+  } catch (error) {}
+}
 module.exports = { register };

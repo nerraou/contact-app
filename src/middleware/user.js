@@ -15,4 +15,8 @@ function validateRegisterBody(req, res, next) {
   }
 }
 
+// create a middleware to generate Access Token
+
+// create a middleware to validate the auth token
+
 module.exports = { validateRegisterBody };
