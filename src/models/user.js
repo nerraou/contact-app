@@ -6,7 +6,7 @@ const UserSchema = new Schema({
   firstName: { type: String, required: true, maxLength: 20 },
   lastName: { type: String, maxLength: 20 },
   phoneNumber: { type: String, required: true, maxLength: 20 },
-  password: { type: String, required: true, minLength: 5, maxLength: 20 },
+  password: { type: String, required: true, minLength: 5, maxLength: 100 },
 });
 
 UserSchema.virtual("fullName").get(function () {
