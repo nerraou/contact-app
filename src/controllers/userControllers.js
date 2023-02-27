@@ -13,7 +13,11 @@ async function register(req, res) {
       phoneNumber: req.body.phoneNumber,
     });
     await user.save();
-    res.send(user);
+    res.send({
+      firstName: user.firstName,
+      lastName: user.lastName,
+      phoneNumber: user.phoneNumber,
+    });
   } catch (error) {
     console.log(error);
     res.send({
