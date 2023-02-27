@@ -1,3 +1,9 @@
+MondoDB version
+
+```
+export MONGODB_VERSION=6.0-ubi8
+```
+
 Running MongoDB as a Docker Container
 
 ```
