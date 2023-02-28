@@ -10,6 +10,6 @@ router.post(
 );
 
 //create new end point for Log in
-router.post("/login", userControllers.login);
+router.post("/login", userMiddlewares.validateLoginBody, userControllers.login);
 
 module.exports = router;
