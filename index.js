@@ -1,3 +1,4 @@
+require("dotenv").config();
 const app = require("./src/app.js");
 const mongoose = require("mongoose");
 const port = 3000;
